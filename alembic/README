@@ -1,0 +1,11 @@
+Generic single-database configuration with an async dbapi.
+
+To autogenerate a migration script (revision) based on changes in SQLAlchemy models:
+
+# alembic revision --autogenerate -m "Description of revision"
+
+To apply the latest revision to database:
+# alembic upgrade head
+
+To revert to a previous revision:
+alembic downgrade -1
