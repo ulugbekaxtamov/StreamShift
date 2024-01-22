@@ -65,7 +65,9 @@ StreamShift/
 │
 ├── core/                 # Configuration and helper classes
 │   ├── __init__.py
-│   └── config.py         # Application configuration
+│   ├── base.py           # Base class for SQLAlchemy models with common attributes
+│   ├── config.py         # Application configuration
+│   └── db_helper.py      # Helper class for managing SQLAlchemy async database connections and sessions
 │
 ├── .env                  # Environment variables file
 ├── example.env           # Example environment variables file
